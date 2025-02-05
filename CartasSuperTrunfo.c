@@ -18,5 +18,40 @@ int main() {
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
 
+    printf("Desafio cadastro das cartas de Super-trunfo\n");
+
+    char letra;
+    int numero; 
+    int populacao;
+    int turismo;
+    char cidade[50];
+    float area;
+    float pib;
+
+    printf("Insira o codigo da carta:\n", letra, numero);
+    scanf("%c %d", &letra, &numero);
+
+    printf("insira o nome da cidade:\n", cidade);
+    scanf("%s", &cidade);
+
+    printf("Insira a populacao da cidade\n", populacao);
+    scanf("%d", &populacao);
+
+    printf("Insira a area:\n");
+    scanf("%f", &area);
+
+    printf("Insira o PIB:\n", pib);
+    scanf("%f", &pib);
+
+    printf("Insira o numero de pontos turisticos:\n", turismo);
+    scanf("%d", &turismo);
+
+    printf("Codigo da carta: %c%d\n", letra, numero);
+    printf("Nome da cidade: %s\n", cidade);
+    printf("Populacao: %d\n", populacao);
+    printf("Area: %f\n", area);
+    printf("PIB: %f\n", pib);
+    printf("Pontos turisticos: %d\n", turismo);
+
     return 0;
 }
