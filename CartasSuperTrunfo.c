@@ -25,8 +25,8 @@ int main() {
     int populacao;
     int turismo;
     char cidade[50];
-    float area;
-    float pib;
+    double area;
+    double pib;
 
     printf("Insira o codigo da carta:\n", letra, numero);
     scanf("%c %d", &letra, &numero);
