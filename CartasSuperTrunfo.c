@@ -27,30 +27,38 @@ int main() {
     char cidade[50];
     double area;
     double pib;
+    double densidade;
+    double percapita;
 
-    printf("Insira o codigo da carta:\n", letra, numero);
+    printf("Insira o codigo da carta:\n");
     scanf("%c %d", &letra, &numero);
 
-    printf("insira o nome da cidade:\n", cidade);
+    printf("insira o nome da cidade:\n");
     scanf("%s", &cidade);
 
-    printf("Insira a populacao da cidade\n", populacao);
+    printf("Insira a populacao da cidade\n");
     scanf("%d", &populacao);
 
     printf("Insira a area:\n");
     scanf("%f", &area);
 
-    printf("Insira o PIB:\n", pib);
+    densidade = (double)populacao / area;
+
+    printf("Insira o PIB:\n");
     scanf("%f", &pib);
 
-    printf("Insira o numero de pontos turisticos:\n", turismo);
+    percapita = (double) pib / populacao;
+
+    printf("Insira o numero de pontos turisticos:\n");
     scanf("%d", &turismo);
 
-    printf("Codigo da carta: %c%d\n", letra, numero);
+    printf("Codigo da carta: %c0%d\n", letra, numero);
     printf("Nome da cidade: %s\n", cidade);
     printf("Populacao: %d\n", populacao);
-    printf("Area: %f\n", area);
-    printf("PIB: %f\n", pib);
+    printf("Area: %.2f\n", area);
+    printf("Densidade populacional: %f\n", densidade);
+    printf("PIB: %f.2\n", pib);
+    printf("PIB per capita: %.2f\n", percapita)
     printf("Pontos turisticos: %d\n", turismo);
 
     return 0;
