@@ -54,10 +54,10 @@ int main() {
     printf("Codigo da carta: %c%d\n", letra, numero);
     printf("Nome da cidade: %s\n", cidade);
     printf("Populacao: %d\n", populacao);
-    printf("Area: %f\n", area);
-    printf("Densidade populacional: %f\n", densidade);
-    printf("PIB: %f\n", pib);
-    printf("Pib per capita: %f\n", pib_per_capita);
+    printf("Area: %.2f\n", area);
+    printf("Densidade populacional: %.2f\n", densidade);
+    printf("PIB: %.2f\n", pib);
+    printf("Pib per capita: %.2f\n", pib_per_capita);
     printf("Pontos turisticos: %d\n", turismo);
 
     return 0;
