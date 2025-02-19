@@ -67,7 +67,7 @@ int main() {
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
-
+    
     printf("Codigo da primeira carta: %c%d\n", estado1, numero1);
     printf("Nome da cidade: %s\n", cidadeA);
     printf("Populacao: %d\n", populacao1);
