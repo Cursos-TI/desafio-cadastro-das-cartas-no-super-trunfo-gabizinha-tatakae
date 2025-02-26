@@ -20,6 +20,9 @@ int main() {
     float super_poder2 = (float)populacao2 + area2 + pib2 + pontos_turisticos2 + pib_per_capita2 + (- densidade_populacional2);
     int opcao;
 
+    densidade_populacional1 = (float)  populacao1 / area1;
+    pib_per_capita1 = (float) pib1 / populacao1;
+
     // Cadastro das Cartas:
     
     printf("Insira o código da primeira carta:\n");
@@ -34,12 +37,8 @@ int main() {
     printf("Insira a área da cidade:\n");
     scanf("%f", &area1);
 
-    densidade_populacional1 = (float)  populacao1 / area1;
-
     printf("Insira o PIB da cidade:\n");
     scanf(" %f", &pib1);
-
-    pib_per_capita1 = (float) pib1 / populacao1;
 
     printf("Insira o número de pontos turísticos:\n");
     scanf("%d", &pontos_turisticos1);
@@ -84,7 +83,7 @@ int main() {
     printf("Densidade populacional: %f\n", densidade_populacional2);
     printf("PIB: %f\n", pib2);
     printf("PIB per capita: %f\n", pib_per_capita2);
-    printf("Pontos turísticos: %d\n", pontos_turisticos2);
+    printf("Pontos turísticos: %d\n\n", pontos_turisticos2);
 
     printf("Comparação das cartas: \n");
     printf("Escolha os atributos a serem comparados: \n");
@@ -99,6 +98,40 @@ int main() {
     scanf("%d", &opcao);
 
     //Função if- else aninhada na funcao switch para a comparação das cartas
+
+    switch (opcao)
+    {
+    case 1:
+        printf("Cidade %s: %lu - ", cidadeA, populacao1);
+        printf("Cidade %s: %d\n", cidadeB, populacao2); 
+        break;
+    case 2:
+        printf("Cidade %s: %f - ", cidadeA, area1);
+        printf("Cidade %s: %f\n", cidadeB, area2);
+        break;
+    case 3:
+        printf("Cidade %s: %f - ", cidadeA, densidade_populacional1);
+        printf("Cidade %s: %f\n", cidadeB, densidade_populacional2);
+        break;
+    case 4:
+        printf("Cidade %s: %f - ", cidadeA, pib1);
+        printf("Cidade %s: %f\n", cidadeB, pib2);
+        break;
+    case 5:
+        printf("Cidade %s: %f - ", cidadeA, pib_per_capita1);
+        printf("Cidade %s: %f\n", cidadeB, pib_per_capita2);
+        break;
+    case 6:
+        printf("Cidade %s: %d - ", cidadeA, pontos_turisticos2);
+        printf("Cidade %s: %d\n", cidadeB, pontos_turisticos2);
+        break;
+    case 7:
+        printf("Cidade %s: %f - ", cidadeA, super_poder1);
+        printf("Cidade %s: %f\n", cidadeB, super_poder2);
+        break;
+    default:
+        break;
+    }
 
     switch (opcao)
     {
