@@ -14,17 +14,17 @@ int main() {
     int pontos_turisticos1, pontos_turisticos2;
     float densidade_populacional1, densidade_populacional2;
     float pib_per_capita1, pib_per_capita2;
-    float super_poder1 = (float)populacao1 + area1 + pib1 + pontos_turisticos1 + pib_per_capita1 + (- densidade_populacional1);
-    float super_poder2 = (float)populacao2 + area2 + pib2 + pontos_turisticos2 + pib_per_capita2 + (- densidade_populacional2);
+    float super_poder1 = (float)(populacao1 + area1 + pib1 + pontos_turisticos1 + pib_per_capita1 + (- densidade_populacional1));
+    float super_poder2 = (float)(populacao2 + area2 + pib2 + pontos_turisticos2 + pib_per_capita2 + (- densidade_populacional2));
     int resultado1, resultado2;
     int atributo1, atributo2;
 
     //Cálculo da densidade populacional e do pib per capita
 
-    densidade_populacional1 = (float) populacao1 / area1;
-    densidade_populacional2 = (float) populacao2 / area2;
-    pib_per_capita1 = (float) pib1 / populacao1;
-    pib_per_capita2 = (float) pib2 / populacao2;
+    densidade_populacional1 = (float) (populacao1 / area1);
+    densidade_populacional2 = (float) (populacao2 / area2);
+    pib_per_capita1 = (float) (pib1 / populacao1);
+    pib_per_capita2 = (float) (pib2 / populacao2);
 
     // menu interativo:
 
@@ -108,49 +108,49 @@ int main() {
     switch (atributo1)
     {
     case 1:
-        printf("Você escolheu a opção 'População'!");
+        printf("Você escolheu a opção 'População'!\n");
         printf("Cidade %s: %lu - ", cidadeA, populacao1);
-        printf("Cidade %s: %d\n", cidadeB, populacao2);
+        printf("Cidade %s: %lu\n", cidadeB, populacao2);
         resultado1 = populacao1 > populacao2 ? 1 : 0;
         break;
     case 2:
-        printf("Você escolheu a opção 'Área'!");
+        printf("Você escolheu a opção 'Área'!\n");
         printf("Cidade %s: %f - ", cidadeA, area1);
         printf("Cidade %s: %f\n", cidadeB, area2);
         resultado1 = area1 > area2 ? 1 : 0;
         break;
     case 3:
-        printf("Você escolheu a opção 'Densidade populacional'!");
+        printf("Você escolheu a opção 'Densidade populacional'!\n");
         printf("Cidade %s: %f - ", cidadeA, densidade_populacional1);
         printf("Cidade %s: %f\n", cidadeB, densidade_populacional2);
         resultado1 = densidade_populacional1 < densidade_populacional2 ? 1 : 0;
         break;
     case 4:
-        printf("Você escolheu a opção 'PIB'!");
+        printf("Você escolheu a opção 'PIB'!\n");
         printf("Cidade %s: %f - ", cidadeA, pib1);
         printf("Cidade %s: %f\n", cidadeB, pib2);
         resultado1 = pib1 > pib2 ? 1 : 0;
         break;
     case 5:
-        printf("Você escolheu a opção 'PIB per capita'!");
+        printf("Você escolheu a opção 'PIB per capita'!\n");
         printf("Cidade %s: %f - ", cidadeA, pib_per_capita1);
         printf("Cidade %s: %f\n", cidadeB, pib_per_capita2);
         resultado1 = pib_per_capita1 > pib_per_capita2 ? 1 : 0;
         break;
     case 6:
-        printf("Você escolheu a opção 'Pontos turísticos'!");
+        printf("Você escolheu a opção 'Pontos turísticos'!\n");
         printf("Cidade %s: %d - ", cidadeA, pontos_turisticos2);
         printf("Cidade %s: %d\n", cidadeB, pontos_turisticos2);
         resultado1 = pontos_turisticos1 > pontos_turisticos2 ? 1 : 0;
         break;
     case 7:
-        printf("Você escolheu a opção 'Super poder'!");
+        printf("Você escolheu a opção 'Super poder'!\n");
         printf("Cidade %s: %f - ", cidadeA, super_poder1);
         printf("Cidade %s: %f\n", cidadeB, super_poder2);
         resultado1 = super_poder1 > super_poder2 ? 1 : 0;
         break;
     default:
-        printf("Opção inválida.");
+        printf("Opção inválida.\n");
         break;
     }
 
@@ -181,43 +181,43 @@ int main() {
         switch (atributo2)
         {
         case 1:
-            printf("Você escolheu a opção 'População'!");
+            printf("Você escolheu a opção 'População'!\n");
             printf("Cidade %s: %lu - ", cidadeA, populacao1);
-            printf("Cidade %s: %d\n", cidadeB, populacao2);
+            printf("Cidade %s: %lu\n", cidadeB, populacao2);
             resultado2 = populacao1 > populacao2 ? 1 : 0;
             break;
         case 2:
-            printf("Você escolheu a opção 'Área'!");
+            printf("Você escolheu a opção 'Área'!\n");
             printf("Cidade %s: %f - ", cidadeA, area1);
             printf("Cidade %s: %f\n", cidadeB, area2);
             resultado2 = area1 > area2 ? 1 : 0;
             break;
         case 3:
-            printf("Você escolheu a opção 'Densidade populacional'!");
+            printf("Você escolheu a opção 'Densidade populacional'!\n");
             printf("Cidade %s: %f - ", cidadeA, densidade_populacional1);
             printf("Cidade %s: %f\n", cidadeB, densidade_populacional2);
             resultado2 = densidade_populacional1 < densidade_populacional2 ? 1 : 0;
             break;
         case 4:
-            printf("Você escolheu a opção 'PIB'!");
+            printf("Você escolheu a opção 'PIB'!\n");
             printf("Cidade %s: %f - ", cidadeA, pib1);
             printf("Cidade %s: %f\n", cidadeB, pib2);
             resultado2 = pib1 > pib2 ? 1 : 0;
             break;
         case 5:
-            printf("Você escolheu a opção 'PIB per capita'!");
+            printf("Você escolheu a opção 'PIB per capita'!\n");
             printf("Cidade %s: %f - ", cidadeA, pib_per_capita1);
             printf("Cidade %s: %f\n", cidadeB, pib_per_capita2);
             resultado2 = pib_per_capita1 > pib_per_capita2 ? 1 : 0;
             break;
         case 6:
-            printf("Você escolheu a opção 'Pontos turísticos'!");
+            printf("Você escolheu a opção 'Pontos turísticos'!\n");
             printf("Cidade %s: %d - ", cidadeA, pontos_turisticos2);
             printf("Cidade %s: %d\n", cidadeB, pontos_turisticos2);
             resultado2 = pontos_turisticos1 > pontos_turisticos2 ? 1 : 0;
             break;
         case 7:
-            printf("Você escolheu a opção 'Super poder'!");
+            printf("Você escolheu a opção 'Super poder'!\n");
             printf("Cidade %s: %f - ", cidadeA, super_poder1);
             printf("Cidade %s: %f\n", cidadeB, super_poder2);
             resultado2 = super_poder1 > super_poder2 ? 1 : 0;
