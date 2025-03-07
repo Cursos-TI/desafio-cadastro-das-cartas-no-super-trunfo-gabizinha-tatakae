@@ -162,7 +162,7 @@ int main() {
     default:
         printf("Opção inválida.\n");
         break;
-    }
+    
 
     //resultado do primeiro teste
 
@@ -246,7 +246,6 @@ int main() {
         default:
             printf("Opção inválida.");
             break;
-    
     }
 
     // resultado do segundo teste
@@ -275,6 +274,7 @@ int main() {
         }else{
             printf("A cidade %s venceu!\n\n", cidadeB);
         }
+    }
     }
     }
 
